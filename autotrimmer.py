@@ -1,3 +1,6 @@
+import setup
+
+
 print(  """Welcome to Autotrimmer!
 This program will set your elevator trim automatically to hold your current pitch.
 You activate the Autotrimmer by holding a joystick button. While active, the autotrimmer
@@ -24,7 +27,7 @@ Enter a command:
 
     match(command.lower()):
         case 'setup':
-            print('You chose setup')
+            setup.setup()
         case 'exit':
             print('Thanks for playing!')
             exit()
